@@ -2,12 +2,17 @@ function criptografar() {
     var input = document.getElementById("input").value;
     var output = criptografarTexto(input);
     document.getElementById("output").value = output;
+    removerImagemDeFundo("mensagem"); 
+    mostrarBotaoCopiar();
 }
 
 function descriptografar() {
     var input = document.getElementById("input").value;
     var output = descriptografarTexto(input);
     document.getElementById("output").value = output;
+    removerImagemDeFundo("mensagem");
+    mostrarBotaoCopiar();
+
 }
 
 function copiarTexto() {
@@ -35,3 +40,15 @@ function descriptografarTexto(texto) {
                                .replace(/ufat/g, "u");
     return descriptografado;
 }
+function removerImagemDeFundo(classe) {
+    var elementos = document.getElementsByClassName(classe);
+  
+    for (var i = 0; i < elementos.length; i++) {
+      elementos[i].style.backgroundImage = "none";
+    }
+  }
+  
+  function mostrarBotaoCopiar() {
+    var botao = document.getElementById("copiar");
+    botao.style.display = "block";
+  }

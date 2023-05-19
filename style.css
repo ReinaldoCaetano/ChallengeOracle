@@ -1,0 +1,111 @@
+
+body{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: #E5E5E5;
+    
+}
+.logo{
+    margin-top: 3%;
+    margin-left: 3%;
+}
+.text-area{
+    font-family: 'Inter';
+    font-style: normal;
+    border: none;
+    width: 680px;
+    height: 288px;
+    background-color: transparent;
+   
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 50px;
+}
+
+.informacao{
+    color: #495057;
+    font-size: 18px;
+}
+.botoes{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+}
+.btn-criptografar{
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.btn-descriptografar{
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 328px;
+    height: 67px;
+
+    /* Light gray */
+
+    background: #D8DFE8;
+    /* Dark blue/dark-blue-300 */
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.box-mensagem{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.mensagem{
+    padding-top: 50px;
+    text-align: center;
+    border-radius: 32px;
+    width: 400px;
+    height: 944px;
+}
+.btn-copiar{
+    display: none;
+    position: absolute;
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    gap: 8px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    top: 80%;
+}
+
+
+
+footer{
+    position: relative;
+    margin-top: 20px;
+    bottom: 0;
+    left: 50%;
+}
