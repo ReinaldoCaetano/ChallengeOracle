@@ -3,6 +3,8 @@ body{
     display: flex;
     height: 100%;
     width: 100%;
+    gap: 5%;
+    position: relative;
     margin-top: 15px;
     flex-direction: row;
     justify-content: space-evenly;
@@ -19,6 +21,7 @@ body{
 .text-area{
     font-family: 'Inter';
     font-style: normal;
+    order: 1;
     margin-top: 20%;
     border: none;
     outline: none;
@@ -55,7 +58,7 @@ main{
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
-    gap: 24px;
+    gap: 5% ;
 
 }
 .btn-criptografar{
@@ -126,6 +129,7 @@ main{
 }
 .box-mensagem{
     display: flex;
+    order: 1;
     position: relative;
     justify-content: center;
     justify-content: space-evenly;
@@ -151,7 +155,7 @@ main{
 }
 .msg{
     position: absolute;
-    top: 50%;
+    top: 60%;
     padding: 5px 5px;
     list-style: none;
     line-height: 1.5;   
@@ -204,7 +208,16 @@ main{
     border-radius: 14px;
     transition: opacity 0.3s ease-in-out;
 }
-
+footer {
+    
+    position: absolute;
+    top: 100%;
+    order: -1;
+}
+a{
+    text-decoration: none;
+    color: black;  
+}
 @media screen  and (max-width: 768px){
      .mensagem{
         background-image: none;
@@ -213,4 +226,33 @@ main{
         padding: auto;
         min-height: 133px;
      } 
+}
+@media screen  and (max-width: 375px){
+
+    .logo{
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    .text-area{
+        width: 343px;
+        height: 48px; 
+        padding: 5%;
+    }
+    .botoes{
+        flex-wrap: wrap;
+        align-items: center;
+        margin: auto;
+    }
+    .box-mensagem{
+        margin: auto;
+        align-items: center;
+    }
+    .mensagem{
+       margin: auto;
+       padding: none;
+       background-image: none;
+       width: 343px;
+       max-height: 327px;
+       padding: auto;
+    } 
 }
