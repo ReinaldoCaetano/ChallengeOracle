@@ -61,7 +61,7 @@ main{
     background: #0A3871;
     border-radius: 24px;
     /* Inside auto layout */
-
+    cursor: pointer;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -73,7 +73,7 @@ main{
 
     width: 328px;
     height: 67px;
-
+    cursor: pointer;
     /* Light gray */
 
     background: #D8DFE8;
@@ -104,24 +104,23 @@ main{
     outline: none;
     width: 40vh;
     height: 80vh;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
 }
 .btn-copiar{
     display: none;
     position: absolute;
     width: 80%;
-    height: 67px;
+    height: 10%;
     padding: 24px;
     gap: 8px;
     border: 1px solid #0A3871;
     border-radius: 24px;
     top: 80%;
+    cursor: pointer;
 }
 
-
-
-footer{
-    position: relative;
-    margin-top: 20px;
-    bottom: 0;
-    left: 50%;
-}
