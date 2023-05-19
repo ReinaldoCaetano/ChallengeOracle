@@ -137,7 +137,7 @@ main{
     background-position: center 10px;
     text-align: center;
     padding: 10% 10%;
-    border-radius: 32px;
+    border-radius: 22px;
     resize: none;
     outline: none;
     width: 40vh;
@@ -175,7 +175,7 @@ main{
     padding: 24px;
     gap: 8px;
     border: 1px solid #0A3871;
-    border-radius: 24px;
+    border-radius: 20px;
     top: 80%;
     cursor: pointer;
     font-family: 'Inter';

@@ -27,6 +27,7 @@ function descriptografar() {
   ocultarElementos("msg");
   mostrarBotaoCopiar();
 }
+
 function copiarTexto() {
   var output = document.getElementById("output");
   output.select();
@@ -73,6 +74,7 @@ function ocultarElementos(classe) {
       elementos[i].style.display = "none";
   }
 }
+
 function exibirAlerta(mensagem) {
   var alertaDiv = document.createElement("div");
   alertaDiv.innerText = mensagem;
@@ -86,3 +88,8 @@ function exibirAlerta(mensagem) {
       }, 300);
   }, 3000);
 }
+
+window.addEventListener('DOMContentLoaded', function() {
+  var textarea = document.getElementById('input');
+  textarea.focus();
+});
