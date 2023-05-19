@@ -3,6 +3,7 @@ function criptografar() {
     var output = criptografarTexto(input);
     document.getElementById("output").value = output;
     removerImagemDeFundo("mensagem"); 
+    ocultarElementos("msg");
     mostrarBotaoCopiar();
 }
 
@@ -11,6 +12,7 @@ function descriptografar() {
     var output = descriptografarTexto(input);
     document.getElementById("output").value = output;
     removerImagemDeFundo("mensagem");
+    ocultarElementos("msg");
     mostrarBotaoCopiar();
 
 }
@@ -51,4 +53,11 @@ function removerImagemDeFundo(classe) {
   function mostrarBotaoCopiar() {
     var botao = document.getElementById("copiar");
     botao.style.display = "block";
+  }
+
+  function ocultarElementos(classe) {
+    var elementos = document.getElementsByClassName(classe);
+    for (var i = 0; i < elementos.length; i++) {
+      elementos[i].style.display = "none";
+    }
   }
