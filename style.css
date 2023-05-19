@@ -12,8 +12,8 @@ body{
 }
 .logo{
     order: 1;
-    margin-top: 5%;
-    margin-left: 5%;
+    margin-top: 15px;
+    margin-left: 15px;
 
 }
 .text-area{
@@ -23,12 +23,15 @@ body{
     border: none;
     outline: none;
     resize: none;
+    cursor: pointer;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
     color: #0A3871;
+    width: 688px;
+    height: 48px;
     background-color: transparent;
 }
 .text-area::placeholder{color: #0A3871;}
@@ -43,6 +46,7 @@ main{
 }
 
 .informacao{
+    margin-top: 30%;
     color: #495057;
     font-size: 18px;
 }
@@ -66,7 +70,17 @@ main{
     flex: none;
     order: 0;
     flex-grow: 0;
+    transition: background-color 0.3s ease-in-out;
 }
+
+.btn-criptografar:hover {
+    background-color: #0D4D91;
+}
+
+.btn-criptografar:active {
+    background-color: #072E57;
+}
+
 .btn-descriptografar{
     align-items: flex-start;
     padding: 24px;
@@ -88,11 +102,22 @@ main{
     flex: none;
     order: 1;
     flex-grow: 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-descriptografar:hover {
+    background-color: #C0C9D3;
+}
+
+.btn-descriptografar:active {
+    background-color: #A9B3BD;
 }
 .box-mensagem{
     display: flex;
     position: relative;
     justify-content: center;
+    justify-content: space-evenly;
+
 }
 .mensagem{
     background-image: url(imgs/boneco.svg);
@@ -141,5 +166,33 @@ main{
     border-radius: 24px;
     top: 80%;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
+.btn-copiar:hover {
+    background-color: #0D4D91;
+}
+
+.btn-copiar:active {
+    background-color: #072E57;
+}
+.alerta {
+    position: absolute;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 14px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+@media screen  and (max-width: 768px){
+     .mensagem{
+        background-image: none;
+        width: 688px;
+        max-height: 343px;
+        padding: auto;
+        min-height: 133px;
+     } 
+}
